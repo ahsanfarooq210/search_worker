@@ -24,6 +24,7 @@
                 android:id="@+id/imgView_logo"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icons8_add_100px_1" />
@@ -34,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imgView_logo"
                 android:animateLayoutChanges="true"
-                android:visibility="gon">
+                android:visibility="visible">
 
                 <TextView
                     android:id="@+id/tv_login"
@@ -42,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Login"
+                    android:text="Create Resume"
                     android:textColor="@android:color/black"
                     android:textSize="30sp" />
 
@@ -123,13 +124,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
-                            android:text="Password"
+                            android:text="name"
                             android:textAllCaps="true"
                             android:textColor="@android:color/black"
                             android:textSize="15sp" />
 
                         <EditText
-                            android:id="@+id/password_tf"
+                            android:id="@+id/name_tf"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginTop="5dp"
@@ -153,13 +154,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
-                            android:text="Password"
+                            android:text="CNIC"
                             android:textAllCaps="true"
                             android:textColor="@android:color/black"
                             android:textSize="15sp" />
 
                         <EditText
-                            android:id="@+id/password_tf"
+                            android:id="@+id/cnic_tf"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginTop="5dp"
@@ -183,19 +184,19 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
-                            android:text="Password"
+                            android:text="contact number"
                             android:textAllCaps="true"
                             android:textColor="@android:color/black"
                             android:textSize="15sp" />
 
                         <EditText
-                            android:id="@+id/password_tf"
+                            android:id="@+id/contact_tf"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginTop="5dp"
                             android:background="@drawable/et_bg"
                             android:fontFamily="sans-serif-light"
-                            android:inputType="textPassword"
+                            android:inputType="numberDecimal"
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:textColor="@android:color/white"
@@ -213,19 +214,19 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
-                            android:text="Password"
+                            android:text="education"
                             android:textAllCaps="true"
                             android:textColor="@android:color/black"
                             android:textSize="15sp" />
 
-                        <EditText
-                            android:id="@+id/password_tf"
+                        <Spinner
+                            android:id="@+id/education_spinner"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginTop="5dp"
                             android:background="@drawable/et_bg"
                             android:fontFamily="sans-serif-light"
-                            android:inputType="textPassword"
+
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:textColor="@android:color/white"
@@ -243,13 +244,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
-                            android:text="Password"
+                            android:text="date and from"
                             android:textAllCaps="true"
                             android:textColor="@android:color/black"
                             android:textSize="15sp" />
 
                         <EditText
-                            android:id="@+id/password_tf"
+                            android:id="@+id/date_and_from_tf"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginTop="5dp"
@@ -262,6 +263,122 @@
                             android:textSize="15sp" />
 
                     </LinearLayout>
+                    <Button
+                        android:id="@+id/add_education_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/linlay1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/btn_bg"
+                        android:clickable="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="addEducation"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:text="Add Education"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="projects"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/projects_tf"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="textPassword"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/add_project_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/linlay1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/btn_bg"
+                        android:clickable="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="addProject"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:text="Add Project"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="research background"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/research_background_tf"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="textPassword"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/add_research_background_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/linlay1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/btn_bg"
+                        android:clickable="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="addResearchButton"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:text="Add Research"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+
+
 
 
                 </LinearLayout>
@@ -276,10 +393,10 @@
                     android:background="@drawable/btn_bg"
                     android:clickable="true"
                     android:fontFamily="sans-serif-medium"
-                    android:onClick="loginButton"
+                    android:onClick="create"
                     android:paddingLeft="70dp"
                     android:paddingRight="70dp"
-                    android:text="Login Now"
+                    android:text="create"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
                     android:textSize="16sp" />
