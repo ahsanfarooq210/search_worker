@@ -2,6 +2,7 @@ package com.example.search_worker.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -51,5 +52,6 @@ public class MainActivity extends AppCompatActivity
 
     public void addResume(View view)
     {
+        startActivity(new Intent(MainActivity.this,Add_resume.class));
     }
 }
