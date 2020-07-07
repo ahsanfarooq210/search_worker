@@ -44,10 +44,12 @@ public class MainActivity extends AppCompatActivity
 
     public void searchResume(View view)
     {
+        startActivity(new Intent(MainActivity.this,edit_rv_activity.class));
     }
 
     public void editResume(View view)
     {
+
     }
 
     public void addResume(View view)
