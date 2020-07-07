@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity
 
     public void editResume(View view)
     {
-
+        startActivity(new Intent(MainActivity.this,edit_resume.class));
     }
 
     public void addResume(View view)

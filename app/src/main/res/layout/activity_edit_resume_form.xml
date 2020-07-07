@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.edit_resume_form">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:foregroundGravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:animateLayoutChanges="true">
+
+            <ImageView
+                android:id="@+id/imgView_logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icons8_add_100px_1" />
+
+            <RelativeLayout
+                android:id="@+id/rellay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgView_logo"
+                android:animateLayoutChanges="true"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Create Resume"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:id="@+id/linlay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_login"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Username"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/eusername_tf"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Password"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/epassword_tf"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="textPassword"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="name"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/ename_tf"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="CNIC"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/ecnic_tf"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="contact number"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/econtact_tf"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="education"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/eeducation_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="date and from"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/edate_and_from_tf"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="textCapWords"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/add_education_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/linlay1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/btn_bg"
+                        android:clickable="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="addEducation"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:text="Add Education"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <Button
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/linlay1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/btn_bg"
+                        android:clickable="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="clearEducation"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:text="Clear Education"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="projects"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/eprojects_tf"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="textAutoComplete"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/add_project_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/linlay1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/btn_bg"
+                        android:clickable="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="addProject"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:text="Add Project"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                    <Button
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/linlay1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/btn_bg"
+                        android:clickable="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="clearProject"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:text="Clear Projects"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="research background"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/eresearch_background_tf"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="textAutoComplete"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/add_research_background_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/linlay1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/btn_bg"
+                        android:clickable="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="addResearchButton"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:text="Add Research"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <Button
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/linlay1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/btn_bg"
+                        android:clickable="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="clearResearch"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:text="Clear Research"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Skills (comma seperated)"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/eskills_tf"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="textAutoComplete"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/linlay1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/btn_bg"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="create"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="70dp"
+                    android:text="create"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/rellay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone">
+
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/my_progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:indeterminateDrawable="@drawable/progress_bar_ring" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
